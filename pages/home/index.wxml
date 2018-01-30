@@ -1,0 +1,6 @@
+<!--pages/home/index.wxml-->
+<view class="container">
+  <view class="item">
+    <navigator url="/pages/marquee/index">marquee</navigator>
+  </view>
+</view>

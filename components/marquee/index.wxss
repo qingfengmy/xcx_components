@@ -1,0 +1,12 @@
+
+.marquee_container{
+  background-color: #0099FF;
+  height: 1.2em;
+  position: relative;
+  width: 100%;
+}
+
+.marquee_text{
+  display: inline-block;
+  white-space: nowrap;
+}

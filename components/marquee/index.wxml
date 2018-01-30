@@ -1,0 +1,3 @@
+<view class="marquee_container" animation="{{animationData}}">
+    <view class="marquee_text">{{text}}</view>
+</view>

@@ -1,0 +1,6 @@
+<view>
+  <view>
+    <!-- <qing-marquee text="hello world!!!!!!"></qing-marquee> -->
+    <qing-marquee text="心之所向，不知索取！！！！！"></qing-marquee>
+  </view>
+</view>
