@@ -1,6 +1,8 @@
 <view>
   <view>
     <!-- <qing-marquee text="hello world!!!!!!"></qing-marquee> -->
-    <qing-marquee text="心之所向，不知索取！！！！！"></qing-marquee>
+    <qing-marquee text="hello world！！" background="red" color="white"></qing-marquee>
+    <qing-marquee text="心之所向，不知所取！！！！！" background="green" color="white"></qing-marquee>
+    <qing-marquee text="速度" background="blue" font-size="30" color="white"></qing-marquee>
   </view>
 </view>

@@ -8,6 +8,18 @@ Component({
       type: String,
       value: '',
       observer: "updateText"
+    },
+    fontSize: {
+      type: Number,
+      value: 16
+    },
+    color: {
+      type: String,
+      value: 'white'
+    },
+    background: {
+      type: String,
+      value: 'lightblue'
     }
   },
 
@@ -15,44 +27,46 @@ Component({
    * 组件的初始数据
    */
   data: {
-    animationData: {}
+    animationData: {},
+    velocity: 16
   },
 
-  ready(){
-    var animation = wx.createAnimation({
-      duration: 10000,
-      timingFunction: 'ease',
-    })
+  ready() {
+    const { fontSize, text, velocity } = this.data;
+    const width = this.getWidth(text) * fontSize;
+    const duration = width * 1000 / velocity;
+    this.setData({ width, duration });
+    var animation = wx.createAnimation({})
 
     this.animation = animation
 
-    animation.translate(375).step()
+    this.start();
 
-    this.setData({
-      animationData: animation.export()
-    })
+    this.interval = setInterval(this.start.bind(this), duration + 100)
+
+  },
+
+  detached() {
+    clearInterval(this.interval);
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    start() {
+      const { width, duration } = this.data;
+      this.animation.translate(375).step({ duration: 100, timingFunction: 'step-start' });
+      this.animation.translate(-width).step({ duration });
+      this.setData({
+        animationData: this.animation.export()
+      })
+    },
     updateText(newVal, oldVal) {
-      // if (!newVal) {
-      //   return;
-      // }
-      // const width = this.getWidth(newVal);
-      // const duration = this.getDuration(newVal);
-      // var animation = wx.createAnimation({
-      //   duration: 10000,
-      //   timingFunction: "ease",
-      //   delay: 0
-      // })
-      // animation.translate(50).step();
-      // console.log('this.animation', animation);
-      // this.setData({
-      //   animationData: animation.export()
-      // })
+      if (!newVal) {
+        return;
+      }
+
     },
     getWidth(str) {
       return [].reduce.call(str, (pre, cur, index, arr) => {
