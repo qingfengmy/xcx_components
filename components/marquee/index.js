@@ -4,23 +4,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    text: {
-      type: String,
-      value: '',
-      observer: "updateText"
+    option: {
+      type: Object,
+      value: {
+        color: '#FF993D',
+        bgColor: '#FFF9E9',
+        text: 'hello world hello world hello world'
+      },
     },
-    fontSize: {
-      type: Number,
-      value: 16
-    },
-    color: {
-      type: String,
-      value: 'white'
-    },
-    background: {
-      type: String,
-      value: 'lightblue'
-    }
   },
 
   /**
@@ -33,17 +24,19 @@ Component({
 
   ready() {
     const { fontSize, text, velocity } = this.data;
-    const width = this.getWidth(text) * fontSize;
-    const duration = width * 1000 / velocity;
-    this.setData({ width, duration });
-    var animation = wx.createAnimation({})
+    const that = this;
+    wx.createSelectorQuery().in(this).select('#text').boundingClientRect(function (rect) {
+      const width = rect.width;
+      const duration = (width * 10+100000) / velocity;
+      that.setData({ width, duration });
+      var animation = wx.createAnimation({})
 
-    this.animation = animation
+      that.animation = animation
 
-    this.start();
+      that.start();
 
-    this.interval = setInterval(this.start.bind(this), duration + 100)
-
+      that.interval = setInterval(that.start.bind(that), duration + 1100)
+    }).exec();
   },
 
   detached() {
@@ -56,7 +49,7 @@ Component({
   methods: {
     start() {
       const { width, duration } = this.data;
-      this.animation.translate(375).step({ duration: 100, timingFunction: 'step-start' });
+      this.animation.translate(317).step({ duration: 100, timingFunction: 'step-start' });
       this.animation.translate(-width).step({ duration });
       this.setData({
         animationData: this.animation.export()
@@ -67,19 +60,6 @@ Component({
         return;
       }
 
-    },
-    getWidth(str) {
-      return [].reduce.call(str, (pre, cur, index, arr) => {
-        if (str.charCodeAt(index) > 255) {// charCode大于255是汉字
-          pre++;
-        } else {
-          pre += 0.5;
-        }
-        return pre;
-      }, 0);
-    },
-    getDuration(str) {// 保留，根据文字长度设置时间
-      return this.getWidth(str) * 1000;
     }
   }
 })

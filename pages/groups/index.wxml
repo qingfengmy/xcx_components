@@ -1,0 +1,6 @@
+<view>
+<qing-groups options="{{options1}}" />
+<qing-groups options="{{options2}}" />
+<qing-groups options="{{options3}}" />
+<qing-groups options="{{options4}}" />
+</view>

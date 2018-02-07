@@ -1,0 +1,11 @@
+/* components/groups/index.wxss */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background: lightblue;
+}
+
+.item {
+  padding: 5px 8px;
+}

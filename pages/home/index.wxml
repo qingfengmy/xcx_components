@@ -3,4 +3,7 @@
   <view class="item">
     <navigator url="/pages/marquee/index">marquee</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/groups/index">groups</navigator>
+  </view>
 </view>

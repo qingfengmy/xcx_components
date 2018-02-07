@@ -5,7 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    marquees:[
+      {
+        text:'hello world！！',
+        color:'white',
+        bgColor:'#d0021b'
+      },{
+        text: '醒来就在花下坐，醉来就在花下眠！！',
+        color: 'white',
+        bgColor: '#f8e71c'
+      },{
+        text: 'hello world$#%%Y#$@#@#@#@#！！',
+        color: 'white',
+        bgColor: '#417505'
+      }
+    ]
   },
 
   /**

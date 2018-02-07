@@ -1,0 +1,7 @@
+<scroll-view scroll-x style="height: 88px;">
+  <view class='container' style='width:{{width}}px'>
+    <view wx:for="{{options}}" class='item'>
+      {{item}}
+    </view>
+  </view>
+</scroll-view>

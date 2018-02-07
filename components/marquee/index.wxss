@@ -1,12 +1,26 @@
-
-.marquee_container{
-  background-color: #0099FF;
-  height: 1.2em;
-  position: relative;
-  width: 100%;
+.notice--icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 24rpx;
+  margin-right: 16rpx;
 }
 
-.marquee_text{
+.marquee_container {
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+  width: 702rpx;
+  margin: 0 24rpx;
+  border-radius: 36rpx;
+}
+
+.text_container {
+  overflow: hidden;
+  width: 634rpx;
+}
+
+.marquee_text {
   display: inline-block;
   white-space: nowrap;
+  font-size: 24rpx;
 }
