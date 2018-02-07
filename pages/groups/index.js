@@ -7,7 +7,7 @@ Page({
   data: {
     options1: ['hello', 'world', 'hello world', '天之道，损有余而补不足', '落花流水春去也', '梳洗罢', '宇宙洪荒', 'nice to meet you'],
     options2: ['hello', 'world', 'hello world', '梳洗罢', '宇宙洪荒', 'nice'],
-    options3: ['hello', 'world', '天之道', '，损有余补不足', '落花流水春也', '梳洗罢', '宇宙洪荒', 'meeyou'],
+    options3: ['hello', 'world', '天之道'],
     options4: ['一二三四五六','天南地北海鸥','春夏秋冬无极','四面八方西东','来无影去无踪','山无棱天地人','谁不知谁难受','天外来客最牛']
   },
 

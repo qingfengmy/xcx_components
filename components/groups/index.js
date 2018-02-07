@@ -23,18 +23,25 @@ Component({
     const query = wx.createSelectorQuery().in(this)
     const that = this;
     query.selectAll('.item').boundingClientRect(function (res) {
+      
       const width = res.reduce(function (a, b) {
         return a + b.width;
       }, 0);
-      let finalWidth = 0;
-      res.reduce(function (a, b) {
-        const result = a + b.width;
-        if (result >= (width / 2 > 375 ? width / 2 : 375) && finalWidth == 0) {
-          finalWidth = result;
-        }
-        return result;
-      }, 0);
-      that.setData({ width: finalWidth });
+
+      if (width <= 375) {
+        that.setData({ width });
+      } else {
+        let finalWidth = 0;
+        res.reduce(function (a, b) {
+          const result = a + b.width;
+          if (result >= (width / 2 > 375 ? width / 2 : 375) && finalWidth == 0) {
+            finalWidth = result;
+          }
+          return result;
+        }, 0);
+        that.setData({ width: finalWidth });
+      }
+
     }).exec()
   },
 
