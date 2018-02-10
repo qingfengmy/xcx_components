@@ -6,4 +6,7 @@
   <view class="item">
     <navigator url="/pages/groups/index">groups</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/weiqi/index">weiqi</navigator>
+  </view>
 </view>

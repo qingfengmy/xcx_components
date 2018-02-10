@@ -1,0 +1,31 @@
+/* components/weiqi/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.top{
+  flex-grow: 1;
+}
+.bottom{
+  flex-shrink: 0;
+}
+.form-item{
+  display: flex;
+  height: 80rpx;
+  padding: 0 40rpx;
+}
+.form-label{
+  margin-right: 20rpx;
+}
+.block{
+  width: 750rpx;
+  height: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

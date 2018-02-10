@@ -1,0 +1,48 @@
+<view class='container'>
+  <view class='top'>
+    <view class='block'>
+      <view wx:for="{{array}}" class='item' style="width:{{750/n}}rpx;height:{{750/n}}rpx;background:{{groups.isBlack(index,n) ? '#000':'#fff'}};color:{{groups.isBlack(index,n) ? '#fff':'#000'}}">{{groups.getText(index,n)}}</view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <form bindsubmit="formSubmit">
+      <view class='form-item'>
+        <label class='form-label'>n的值:</label>
+        <input type='number' placeholder='请输入n的值' name="n"></input>
+      </view>
+      <view class='form-item'>
+        <label class='form-label'>计算结果:</label>
+        <text>{{result}}</text>
+      </view>
+      <button type='primary' form-type='submit'>计算</button>
+    </form>
+  </view>
+</view>
+
+<wxs module="groups">
+  var isOdd = function(num) {
+    return num % 2 === 0;
+  }
+  var isBlack = function(index, n) {
+    var row = Math.floor(index / n);
+    var col = index % n;
+    console.log(index, n, row, col);
+    if (isOdd(row) && isOdd(col)) {
+      return false;
+    } else if (isOdd(row) && !isOdd(col)) {
+      return true;
+    } else if (!isOdd(row) && isOdd(col)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  var getText = function(index, n) {
+    var row = Math.floor(index / n);
+    var col = index % n;
+    console.log(index, n, row, col);
+    return (col + 1) + '/' + (row+col+2)
+  }
+  module.exports.isBlack = isBlack;
+  module.exports.getText = getText;
+</wxs>

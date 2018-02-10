@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/marquee/index",
-    "pages/groups/index"
+    "pages/groups/index",
+    "pages/weiqi/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
