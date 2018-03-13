@@ -23,20 +23,7 @@ Component({
   },
 
   ready() {
-    const { fontSize, text, velocity } = this.data;
-    const that = this;
-    wx.createSelectorQuery().in(this).select('#text').boundingClientRect(function (rect) {
-      const width = rect.width;
-      const duration = (width * 10+100000) / velocity;
-      that.setData({ width, duration });
-      var animation = wx.createAnimation({})
-
-      that.animation = animation
-
-      that.start();
-
-      that.interval = setInterval(that.start.bind(that), duration + 1100)
-    }).exec();
+    this.setNotice();
   },
 
   detached() {
@@ -49,12 +36,34 @@ Component({
   methods: {
     start() {
       const { width, duration } = this.data;
-      this.animation.translate(317).step({ duration: 100, timingFunction: 'step-start' });
-      this.animation.translate(-width).step({ duration });
-      this.setData({
-        animationData: this.animation.export()
+      let that = this;
+      // wx.createSelectorQuery().in(this).select('#text').boundingClientRect(function (rect) {
+      that.animation.translate((682 / 750) * wx.getSystemInfoSync().screenWidth).step({ duration: 100, timingFunction: 'step-start' });
+      that.animation.translate(-width).step({ duration });
+      that.setData({
+        animationData: that.animation.export()
       })
+      // }).exec()
+
     },
+
+    setNotice() {
+      const { fontSize, text, velocity } = this.data;
+      const that = this;
+      wx.createSelectorQuery().in(this).select('#text').boundingClientRect(function (rect) {
+        const width = rect.width;
+        const duration = (width + (682 / 750) * wx.getSystemInfoSync().screenWidth) * 500 / velocity;
+        that.setData({ width, duration });
+        var animation = wx.createAnimation({ duration })
+
+        that.animation = animation
+
+        that.start();
+
+        that.interval = setInterval(that.start.bind(that), duration)
+      }).exec();
+    },
+
     updateText(newVal, oldVal) {
       if (!newVal) {
         return;
