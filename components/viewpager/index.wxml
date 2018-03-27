@@ -1,0 +1,13 @@
+<view class='container'>
+  <swiper style='height:{{height}}px' bindchange="handleSwiperChange">
+    <block wx:for="{{imgUrls}}" >
+      <swiper-item class="swiper-item">
+        <image src="{{item}}" class="slide-image" bindload="handleLoad" data-index="{{index}}" style='height:{{imgH[index]}}px' />
+      </swiper-item>
+    </block>
+    <swiper-item>
+      <view class='loading' style='height:{{height}}px'>loading...</view>
+    </swiper-item>
+  </swiper>
+  <view class='tips'>hello world</view>
+</view>

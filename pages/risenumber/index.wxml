@@ -1,0 +1,4 @@
+<view>
+<qing-risenum id="qing-risenum" styles="margin:20rpx;color:#f22222;font-size:50rpx;" />
+<button bindtap='start'>start</button>
+</view>

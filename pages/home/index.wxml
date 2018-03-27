@@ -9,4 +9,10 @@
   <view class="item">
     <navigator url="/pages/weiqi/index">weiqi</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/viewpager/index">viewpager</navigator>
+  </view>
+  <view class="item">
+    <navigator url="/pages/risenumber/index">risenumber</navigator>
+  </view>
 </view>

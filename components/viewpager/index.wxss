@@ -1,0 +1,30 @@
+/* components/viewpager/index.wxss */
+
+.slide-image {
+  width: 750rpx;
+}
+
+.swiper-item {
+  display: flex;
+  align-items: center;
+}
+
+.tips {
+  height: 100px;
+  color: red;
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  background: #010101;
+  position: relative;
+}
+.loading{
+  background: white;
+  color: black;
+  font-size: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

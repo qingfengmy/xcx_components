@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "qing-risenum": "/components/risenumber/index"
+  }
+}

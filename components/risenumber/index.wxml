@@ -1,0 +1,2 @@
+<!--components/risenumber/index.wxml-->
+<text style='{{styles}}'>{{value}}</text>

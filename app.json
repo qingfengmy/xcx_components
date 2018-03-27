@@ -5,7 +5,9 @@
     "pages/logs/logs",
     "pages/marquee/index",
     "pages/groups/index",
-    "pages/weiqi/index"
+    "pages/weiqi/index",
+    "pages/viewpager/index",
+    "pages/risenumber/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
