@@ -7,7 +7,9 @@
     "pages/groups/index",
     "pages/weiqi/index",
     "pages/viewpager/index",
-    "pages/risenumber/index"
+    "pages/risenumber/index",
+    "pages/scroll/index",
+    "pages/imgmode/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

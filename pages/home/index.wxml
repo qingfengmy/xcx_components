@@ -15,4 +15,10 @@
   <view class="item">
     <navigator url="/pages/risenumber/index">risenumber</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/scroll/index">scroll</navigator>
+  </view>
+  <view class="item">
+    <navigator url="/pages/imgmode/index">图片mode</navigator>
+  </view>
 </view>

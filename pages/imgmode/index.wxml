@@ -1,0 +1,59 @@
+<view class='container'>
+  <view class='item'>
+    <text class='label'>1. 原版</text>
+    <image src='/images/750-250.jpg' style='width:750rpx;height:250rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>2. scaleToFill(不保持纵横比，拉伸至image元素)</text>
+    <image src='/images/750-250.jpg' style='width:750rpx;height:500rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>3. aspectFit(使长边显示出来，短边会有空白，位于中间部分，空白在两边)</text>
+    <image src='/images/750-250.jpg' mode='aspectFit' style='width:750rpx;height:500rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>4. aspectFit(使长边显示出来，短边会有空白)</text>
+    <image src='/images/750-250.jpg' mode='aspectFit' style='width:750rpx;height:150rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>5. aspectFill(使短边显示出来，长边会有裁剪，显示图片中间部分，裁掉两边)</text>
+    <image src='/images/750-250.jpg' mode='aspectFill' style='width:750rpx;height:500rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>6. aspectFill(使短边显示出来，长边会有裁剪，显示图片中间部分，裁掉两边)</text>
+    <image src='/images/750-250.jpg' mode='aspectFill' style='width:750rpx;height:150rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>7. widthFix(宽度为准，长度自适应,设置高度无效，保持图片比例)</text>
+    <image src='/images/750-250.jpg' mode='widthFix' style='width:750rpx;height:500rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>8. widthFix(宽度为准，长度自适应，设置高度无效，保持图片比例)</text>
+    <image src='/images/750-250.jpg' mode='widthFix' style='width:750rpx;height:150rpx;'></image>
+  </view>
+  <view class='item'>
+    <text class='label'>9. widthFix(宽度为准，长度自适应，设置高度无效，保持图片比例)</text>
+    <image src='/images/750-250.jpg' mode='widthFix' style='width:500rpx'></image>
+  </view>
+  <view class='pubuliu'>
+    <view class="free-panel-title">纯css3瀑布流布局 ( 利用css3的column-＊属性 )</view>
+    <view class="free-WaterfallFlow">
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.id}}' 
+        wx:if="{{item.id%2!=''}}">
+          <image mode="widthFix" src="{{item.src}}"></image>
+          <view>{{item.name}}</view>
+          <view>{{item.data}}</view>
+        </view>
+      </block>
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.id}}'
+        wx:if="{{item.id%2==''}}">
+          <image mode="widthFix" src="{{item.src}}"></image>
+          <view>{{item.name}}</view>
+          <view>{{item.data}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

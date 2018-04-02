@@ -1,0 +1,31 @@
+
+.out_content{
+  font-size: 160px;
+  background: lightblue
+}
+.in_content{
+  font-size: 160px;
+}
+
+.in_container{
+  position: fixed;
+  height:100vh;
+  width: 100%;
+  top:0;
+  left: 0;
+  opacity: 0.5;
+  background: #000;
+  z-index: 2001;
+}
+
+.in{
+  position: fixed;
+  width:200px;
+  height:100vh;
+  top:0;
+  right: 0;
+  opacity: 0.5;
+  overflow: hidden;
+  background: red;
+  z-index: 2002;
+}
