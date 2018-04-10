@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "parent": "/components/events/parent/index",
+    "parentone": "/components/events/parent1/index",
+    "child": "/components/events/child/index"
+  }
+}

@@ -1,0 +1,3 @@
+<view  bind:customevent="handleTap2">
+  <child bind:customevent="handleTap1" />
+</view>

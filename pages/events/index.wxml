@@ -1,0 +1,18 @@
+<view style='font-size:20px;color:red'>---------------基本冒泡-----------------</view>
+<view bind:customevent="handleTap1">
+  <child bind:customevent="handleTap2"></child>
+</view>
+
+<view style='font-size:20px;color:red'>---------------多层冒泡-----------------</view>
+
+<view bind:customevent="handleTap3">
+  <parentone bind:customevent="handleTap4">
+    <child bind:customevent="handleTap5"></child>
+  </parentone>
+</view>
+
+<view style='font-size:20px;color:red'>------------------错误冒泡--------------</view>
+
+<view bind:customevent="handleTap6">
+  <parent bind:customevent="handleTap7" />
+</view>

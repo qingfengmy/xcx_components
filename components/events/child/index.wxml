@@ -1,0 +1,2 @@
+<button bind:tap="handleBubblesTap">冒泡</button>
+<button bind:tap="handletap">不冒泡</button>

@@ -21,4 +21,7 @@
   <view class="item">
     <navigator url="/pages/imgmode/index">图片mode</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/events/index">事件</navigator>
+  </view>
 </view>
