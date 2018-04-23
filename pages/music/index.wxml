@@ -1,0 +1,6 @@
+<view class='container'>
+  <qing-music my-class="music-class" play="{{play}}" />
+  <view class='btn' bindtap='play'>
+    <text>{{play?'停止':'开始'}}</text>
+  </view>
+</view>

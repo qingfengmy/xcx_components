@@ -24,4 +24,7 @@
   <view class="item">
     <navigator url="/pages/events/index">事件</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/music/index">音效</navigator>
+  </view>
 </view>

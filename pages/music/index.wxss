@@ -1,0 +1,23 @@
+.container{
+  width: 750rpx;
+  height: 500rpx;
+  position: relative;
+  background: lightsalmon;
+}
+.music-class{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.btn{
+  display: flex;
+  font-size: 32rpx;
+  line-height: 2;
+  background: lightskyblue;
+  border-radius: 10rpx;
+  height: 64rpx;
+  width: 128rpx;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}

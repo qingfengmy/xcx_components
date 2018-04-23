@@ -10,7 +10,8 @@
     "pages/risenumber/index",
     "pages/scroll/index",
     "pages/imgmode/index",
-    "pages/events/index"
+    "pages/events/index",
+    "pages/music/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

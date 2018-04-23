@@ -1,0 +1,23 @@
+<view class='my-class' style="display:inline-block;z-index:1999;">
+  <view class="waves">
+    <view class="movement li1">
+      <view class="ani-li" style="animation-play-state:{{play?'running':'paused'}}"></view>
+    </view>
+    <view class="movement li2">
+      <view class="ani-li" style="animation-play-state:{{play?'running':'paused'}}"></view>
+    </view>
+    <view class="movement li3">
+      <view class="ani-li" style="animation-play-state:{{play?'running':'paused'}}"></view>
+    </view>
+    <view class="movement li4">
+      <view class="ani-li" style="animation-play-state:{{play?'running':'paused'}}"></view>
+    </view>
+    <view class="movement li5">
+      <view class="ani-li" style="animation-play-state:{{play?'running':'paused'}}"></view>
+    </view>
+    <view class="movement li6">
+      <view class="ani-li" style="animation-play-state:{{play?'running':'paused'}}"></view>
+    </view>
+  </view>
+
+</view>

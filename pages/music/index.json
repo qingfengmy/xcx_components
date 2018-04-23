@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "qing-music": "/components/music/index"
+  }
+}
