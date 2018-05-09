@@ -1,0 +1,5 @@
+<view>
+  <view>x::{{x}}</view>
+  <view>y::{{y}}</view>
+  <view>z::{{z}}</view>
+</view>

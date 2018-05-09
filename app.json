@@ -12,7 +12,8 @@
     "pages/imgmode/index",
     "pages/events/index",
     "pages/music/index",
-    "pages/masonrylayouts/index"
+    "pages/masonrylayouts/index",
+    "pages/accelerometer/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

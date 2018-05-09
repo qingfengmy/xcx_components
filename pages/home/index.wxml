@@ -27,4 +27,7 @@
   <view class="item">
     <navigator url="/pages/music/index">音效</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/accelerometer/index">accelerometer</navigator>
+  </view>
 </view>
