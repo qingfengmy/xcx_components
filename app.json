@@ -13,7 +13,8 @@
     "pages/events/index",
     "pages/music/index",
     "pages/masonrylayouts/index",
-    "pages/accelerometer/index"
+    "pages/accelerometer/index",
+    "pages/live-play/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

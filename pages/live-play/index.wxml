@@ -1,0 +1,2 @@
+<live-player src="rtmp://live.hkstv.hk.lxdns.com/live/hks" orientation="vertical" style="width:750rpx" autoplay></live-player>
+<live-player src="rtmp://live.hkstv.hk.lxdns.com/live/hks" orientation="horizontal" style="width:750rpx" autoplay></live-player>
