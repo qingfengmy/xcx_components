@@ -14,11 +14,13 @@
     "pages/music/index",
     "pages/masonrylayouts/index",
     "pages/accelerometer/index",
-    "pages/live-play/index"
+    "pages/live-play/index",
+    "pages/pan1/index",
+    "pages/pan3/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#b2dede",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   }

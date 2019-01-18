@@ -33,4 +33,10 @@
   <view class="item">
     <navigator url="/pages/live-play/index">live-play(个人帐号无法获取直播权限)</navigator>
   </view>
+  <view class="item">
+    <navigator url="/pages/pan1/index">大转盘1</navigator>
+  </view>
+  <view class="item">
+    <navigator url="/pages/pan3/index">大转盘3</navigator>
+  </view>
 </view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "pan1":"/components/pan1/index"
+  }
+}

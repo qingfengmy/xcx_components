@@ -1,0 +1,21 @@
+<view class='container-wrap'>
+  <view>
+    <view class='pointer'>
+      <image src="/images/dial_pointer.png" bindtap='start'></image>
+    </view>
+    <view class='pan-container' style="transform:rotate({{ deg}}deg) translateZ(0)">
+      <view class='item'><view class='item-content'>1111111111111111</view></view>
+      <view class='item'>22222222222222222222</view>
+      <view class='item'>33333333333333333</view>
+      <view class='item'>444444444444444</view>
+      <view class='item'>5</view>
+      <view class='item'>6</view>
+      <view class='item'>7</view>
+      <view class='item'>8</view>
+      <view class='item'>9</view>
+      <view class='item'>10</view>
+      <view class='item'>11</view>
+      <view class='item'>12</view>
+    </view>
+  </view>
+</view>
