@@ -1,0 +1,4 @@
+<view class='container'>
+  <canvas class='canvas' canvas-id='canvas' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+  <view class='text'>谢谢惠顾</view>
+</view>

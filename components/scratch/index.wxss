@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  position: relative;
+}
+
+.canvas {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  z-index: 999;
+}
+
+.text {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

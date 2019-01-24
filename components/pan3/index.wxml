@@ -1,6 +1,6 @@
 <view class='container'>
-  <canvas canvas-id="canvas" style="width:300px;height:300px;"></canvas>
-  <view class='pointer' style="transform:rotate({{deg}}deg) translateZ(0)">
+  <canvas canvas-id="canvas" style="width:300px;height:300px;transform:rotate({{deg}}deg) translateZ(0)"></canvas>
+  <view class='pointer'>
       <image src="/images/dial_pointer.png" bindtap='start'></image>
     </view>
 </view>

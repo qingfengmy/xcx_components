@@ -16,7 +16,8 @@
     "pages/accelerometer/index",
     "pages/live-play/index",
     "pages/pan1/index",
-    "pages/pan3/index"
+    "pages/pan3/index",
+    "pages/scratch/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
