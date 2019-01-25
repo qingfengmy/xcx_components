@@ -17,7 +17,8 @@
     "pages/live-play/index",
     "pages/pan1/index",
     "pages/pan3/index",
-    "pages/scratch/index"
+    "pages/scratch/index",
+    "pages/lock/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,5 @@
+<view class="container">
+  <view>{{notice}}</view>
+  <canvas canvas-id="canvas" class="canvas" bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+  <view bindtap='init' class='btn'>重新设置</view>
+</view>
